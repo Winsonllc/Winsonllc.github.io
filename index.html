@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winson | AI Consulting SaaS</title>
+    <meta
+      name="description"
+      content="Winson LLC builds AI-powered consultation services for families, including maternal and baby product recommendations and parenting guidance."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #1f2937;
+        background: #f8fafc;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+      header {
+        background: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+        position: sticky;
+        top: 0;
+      }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .brand {
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+      .lang-switcher {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .lang-switcher button {
+        border: 1px solid #cbd5e1;
+        background: #ffffff;
+        color: #334155;
+        padding: 6px 10px;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+      .lang-switcher button.active {
+        background: #2563eb;
+        color: white;
+        border-color: #2563eb;
+      }
+      .hero {
+        margin-top: 28px;
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 28px;
+      }
+      h1,
+      h2 {
+        line-height: 1.25;
+        margin-top: 0;
+      }
+      section {
+        margin-top: 20px;
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 24px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      footer {
+        margin: 26px 0 8px;
+        color: #64748b;
+      }
+      @media (max-width: 640px) {
+        .hero,
+        section {
+          padding: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container topbar">
+        <div class="brand" data-i18n="brand">Winson LLC</div>
+        <div class="lang-switcher" aria-label="Language switcher">
+          <button type="button" data-lang="en" class="active">English</button>
+          <button type="button" data-lang="es">Español</button>
+          <button type="button" data-lang="fr">Français</button>
+          <button type="button" data-lang="de">Deutsch</button>
+          <button type="button" data-lang="zh">中文</button>
+          <button type="button" data-lang="ja">日本語</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <article class="hero">
+        <h1 data-i18n="heroTitle">AI Consultation Services for Modern Families</h1>
+        <p data-i18n="heroText">
+          Winson is a U.S.-focused company founded by an AI PhD. We are currently in project research to package large language model and AI agent capabilities into practical SaaS services for individual customers.
+        </p>
+      </article>
+
+      <section>
+        <h2 data-i18n="visionTitle">What We Build</h2>
+        <p data-i18n="visionText">
+          Our goal is to provide trusted online consultation experiences powered by LLMs and agents.
+        </p>
+        <ul>
+          <li data-i18n="item1">Professional product recommendations for moms and babies across different growth stages.</li>
+          <li data-i18n="item2">Parenting guidance based on baby skill development milestones.</li>
+          <li data-i18n="item3">Playtime and engagement suggestions to support healthy development.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 data-i18n="statusTitle">Current Status</h2>
+        <p data-i18n="statusText">
+          We are actively researching product design, model quality, and service delivery to launch reliable AI advisory tools.
+        </p>
+      </section>
+
+      <footer>
+        <span data-i18n="footerText">© Winson LLC · Domain: getwinson.me</span>
+      </footer>
+    </main>
+
+    <script>
+      const translations = {
+        en: {
+          brand: "Winson LLC",
+          heroTitle: "AI Consultation Services for Modern Families",
+          heroText:
+            "Winson is a U.S.-focused company founded by an AI PhD. We are currently in project research to package large language model and AI agent capabilities into practical SaaS services for individual customers.",
+          visionTitle: "What We Build",
+          visionText:
+            "Our goal is to provide trusted online consultation experiences powered by LLMs and agents.",
+          item1:
+            "Professional product recommendations for moms and babies across different growth stages.",
+          item2:
+            "Parenting guidance based on baby skill development milestones.",
+          item3:
+            "Playtime and engagement suggestions to support healthy development.",
+          statusTitle: "Current Status",
+          statusText:
+            "We are actively researching product design, model quality, and service delivery to launch reliable AI advisory tools.",
+          footerText: "© Winson LLC · Domain: getwinson.me",
+        },
+        es: {
+          brand: "Winson LLC",
+          heroTitle: "Servicios de Consultoría de IA para Familias Modernas",
+          heroText:
+            "Winson es una empresa enfocada en EE. UU. fundada por un doctor en IA. Actualmente investigamos cómo convertir capacidades de modelos de lenguaje y agentes de IA en servicios SaaS prácticos para clientes individuales.",
+          visionTitle: "Qué Construimos",
+          visionText:
+            "Nuestro objetivo es ofrecer experiencias de consulta en línea confiables impulsadas por LLM y agentes.",
+          item1:
+            "Recomendaciones profesionales de productos para madres y bebés en diferentes etapas de crecimiento.",
+          item2:
+            "Orientación de crianza basada en hitos del desarrollo de habilidades del bebé.",
+          item3:
+            "Sugerencias de juego e interacción para apoyar un desarrollo saludable.",
+          statusTitle: "Estado Actual",
+          statusText:
+            "Estamos investigando activamente el diseño del producto, la calidad del modelo y la entrega del servicio para lanzar herramientas confiables de asesoría con IA.",
+          footerText: "© Winson LLC · Dominio: getwinson.me",
+        },
+        fr: {
+          brand: "Winson LLC",
+          heroTitle: "Services de Conseil IA pour les Familles Modernes",
+          heroText:
+            "Winson est une entreprise axée sur les États-Unis, fondée par un docteur en IA. Nous sommes en phase de recherche pour transformer les capacités des LLM et des agents IA en services SaaS pratiques pour les particuliers.",
+          visionTitle: "Ce Que Nous Construisons",
+          visionText:
+            "Notre objectif est de fournir des expériences de conseil en ligne fiables, alimentées par des LLM et des agents.",
+          item1:
+            "Recommandations professionnelles de produits pour les mamans et les bébés à chaque étape de croissance.",
+          item2:
+            "Conseils parentaux basés sur les étapes du développement des compétences du bébé.",
+          item3:
+            "Suggestions de jeux et d'interaction pour favoriser un développement sain.",
+          statusTitle: "Statut Actuel",
+          statusText:
+            "Nous recherchons activement la conception produit, la qualité des modèles et la prestation de service pour lancer des outils de conseil IA fiables.",
+          footerText: "© Winson LLC · Domaine : getwinson.me",
+        },
+        de: {
+          brand: "Winson LLC",
+          heroTitle: "KI-Beratungsdienste für Moderne Familien",
+          heroText:
+            "Winson ist ein auf die USA ausgerichtetes Unternehmen, gegründet von einem KI-PhD. Wir erforschen derzeit, wie sich LLM- und Agentenfähigkeiten in praktische SaaS-Dienste für Privatkunden umsetzen lassen.",
+          visionTitle: "Was Wir Entwickeln",
+          visionText:
+            "Unser Ziel ist es, verlässliche Online-Beratungen anzubieten, die von LLMs und Agenten unterstützt werden.",
+          item1:
+            "Professionelle Produktempfehlungen für Mütter und Babys in verschiedenen Entwicklungsphasen.",
+          item2:
+            "Erziehungsberatung auf Basis der Kompetenzentwicklung des Babys.",
+          item3:
+            "Spiel- und Interaktionsvorschläge zur Unterstützung einer gesunden Entwicklung.",
+          statusTitle: "Aktueller Stand",
+          statusText:
+            "Wir forschen aktiv an Produktdesign, Modellqualität und Servicebereitstellung, um zuverlässige KI-Beratungswerkzeuge einzuführen.",
+          footerText: "© Winson LLC · Domain: getwinson.me",
+        },
+        zh: {
+          brand: "Winson LLC",
+          heroTitle: "面向现代家庭的 AI 咨询服务",
+          heroText:
+            "Winson 是一家主要面向美国市场的公司，由 AI 博士创立。我们目前正在进行项目调研，将大语言模型与智能体能力封装为面向个人客户的实用 SaaS 服务。",
+          visionTitle: "我们正在打造什么",
+          visionText: "我们的目标是提供由 LLM 与 Agents 驱动的可信在线咨询体验。",
+          item1: "为孕妈和宝宝在不同成长阶段提供专业的母婴用品选品建议。",
+          item2: "根据宝宝技能成长里程碑提供科学养育咨询。",
+          item3: "提供有助于健康成长的陪玩与互动建议。",
+          statusTitle: "当前进展",
+          statusText: "我们正在积极调研产品设计、模型质量与服务交付，准备推出可靠的 AI 咨询工具。",
+          footerText: "© Winson LLC · 域名：getwinson.me",
+        },
+        ja: {
+          brand: "Winson LLC",
+          heroTitle: "現代の家族向け AI コンサルティングサービス",
+          heroText:
+            "Winson は米国市場を中心に展開する、AI 博士が設立した企業です。現在、LLM と AI エージェントの機能を個人向けの実用的な SaaS サービスとして提供するための調査を進めています。",
+          visionTitle: "私たちが構築するもの",
+          visionText:
+            "私たちの目標は、LLM とエージェントを活用した信頼できるオンライン相談体験を提供することです。",
+          item1: "妊娠期から乳幼児の成長段階に合わせた、専門的な商品推薦。",
+          item2: "赤ちゃんのスキル発達マイルストーンに基づく育児アドバイス。",
+          item3: "健やかな発達を支える遊び・関わり方の提案。",
+          statusTitle: "現在の状況",
+          statusText:
+            "信頼できる AI アドバイザリーツールの提供に向けて、プロダクト設計・モデル品質・サービス提供方法を積極的に研究しています。",
+          footerText: "© Winson LLC · ドメイン: getwinson.me",
+        },
+      };
+
+      function setLanguage(lang) {
+        const data = translations[lang] || translations.en;
+        document.documentElement.lang = lang;
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.dataset.i18n;
+          if (data[key]) {
+            element.textContent = data[key];
+          }
+        });
+        document.querySelectorAll("[data-lang]").forEach((button) => {
+          button.classList.toggle("active", button.dataset.lang === lang);
+        });
+      }
+
+      document.querySelectorAll("[data-lang]").forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.lang));
+      });
+    </script>
+  </body>
+</html>
